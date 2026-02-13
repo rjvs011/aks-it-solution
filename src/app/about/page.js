@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Us - AKS IT SOLUTION",
+  title: "About Us - ASS IT SOLUTION",
 };
 
 export default function AboutPage() {
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 A Leading <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">IT Solutions</span> Company
               </h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                AKS IT Solution is a premier technology partner dedicated to delivering innovative IT solutions that drive business growth. Since our founding in 2020, we have been at the forefront of digital transformation, helping businesses navigate the complex landscape of modern technology.
+                ASS IT Solution is a premier technology partner dedicated to delivering innovative IT solutions that drive business growth. Since our founding in 2020, we have been at the forefront of digital transformation, helping businesses navigate the complex landscape of modern technology.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Our team of experienced professionals combines technical expertise with industry knowledge to deliver solutions that not only meet but exceed our clients&apos; expectations. We pride ourselves on our commitment to quality, innovation, and customer satisfaction.
@@ -100,39 +100,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TEAM */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center bg-primary-50 rounded-full px-4 py-2 mb-4">
-              <span className="text-primary-600 text-sm font-semibold">Our Team</span>
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">Leadership</span>
-            </h2>
-            <p className="text-gray-600 text-lg">Experienced professionals driving innovation and excellence.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { initials: "AK", name: "Amit Kumar", role: "CEO & Founder", desc: "Visionary leader with 15+ years of experience in technology and business strategy.", color: "primary", roleColor: "text-primary-600" },
-              { initials: "SP", name: "Sneha Patel", role: "CTO", desc: "Technical expert specializing in cloud architecture and enterprise solutions.", color: "accent", roleColor: "text-accent-600" },
-              { initials: "RS", name: "Ravi Sharma", role: "Head of Development", desc: "Full-stack developer with expertise in modern frameworks and agile practices.", color: "green", roleColor: "text-green-600" },
-              { initials: "PM", name: "Priya Mehta", role: "Head of Marketing", desc: "Digital marketing strategist with proven track record in brand growth.", color: "purple", roleColor: "text-purple-600" },
-            ].map((m) => (
-              <div key={m.name} className="text-center group">
-                <div className="relative mb-6">
-                  <div className={`w-40 h-40 bg-gradient-to-br from-${m.color}-500 to-${m.color}-700 rounded-full flex items-center justify-center mx-auto group-hover:scale-105 transition-transform duration-300`}>
-                    <span className="text-white text-5xl font-bold">{m.initials}</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{m.name}</h3>
-                <p className={`${m.roleColor} font-medium mb-3`}>{m.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{m.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
     </>
   );
 }

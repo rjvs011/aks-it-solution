@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,14 +7,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <Link href="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
-              </div>
-              <div>
-                <span className="text-xl font-bold">AKS</span>
-                <span className="text-sm block -mt-1 text-gray-400">IT SOLUTION</span>
-              </div>
+            <Link href="/" className="flex items-center space-x-3 mb-6">
+              <Image src="/images/logo.svg" alt="ASS IT SOLUTION" width={160} height={48} />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Delivering innovative IT solutions that empower businesses to grow and succeed.
@@ -93,7 +88,7 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">&copy; 2025 AKS IT Solution. All Rights Reserved.</p>
+            <p className="text-gray-500 text-sm">&copy; 2025 ASS IT Solution. All Rights Reserved.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
               <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
