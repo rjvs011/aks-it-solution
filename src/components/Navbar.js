@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3">
-            <Image src="/images/logo.svg" alt="ASS IT SOLUTION" width={160} height={48} />
+            <Image src="/images/logo.svg" alt="FwdGrow" width={160} height={48} />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

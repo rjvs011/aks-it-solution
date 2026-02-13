@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
-  title: "ASS IT SOLUTION - Innovative IT Services & Solutions",
+  title: "FwdGrow - Innovative IT Services & Solutions",
   description:
-    "ASS IT Solution provides professional IT services including web development, cloud solutions, IT consulting, cybersecurity, and digital marketing.",
+    "FwdGrow provides professional IT services including web development, cloud solutions, IT consulting, cybersecurity, and digital marketing.",
 };
 
 export default function RootLayout({ children }) {

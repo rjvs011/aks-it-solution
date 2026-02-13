@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Us - ASS IT SOLUTION",
+  title: "About Us - FwdGrow",
 };
 
 export default function AboutPage() {
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 A Leading <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-accent-500">IT Solutions</span> Company
               </h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                ASS IT Solution is a premier technology partner dedicated to delivering innovative IT solutions that drive business growth. Since our founding in 2020, we have been at the forefront of digital transformation, helping businesses navigate the complex landscape of modern technology.
+                FwdGrow is a premier technology partner dedicated to delivering innovative IT solutions that drive business growth. Since our founding in 2020, we have been at the forefront of digital transformation, helping businesses navigate the complex landscape of modern technology.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Our team of experienced professionals combines technical expertise with industry knowledge to deliver solutions that not only meet but exceed our clients&apos; expectations. We pride ourselves on our commitment to quality, innovation, and customer satisfaction.
