@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <Link href="/" className="flex items-center space-x-3 mb-6">
-              <Image src="/images/logo.svg" alt="ASS IT SOLUTION" width={160} height={48} />
+              <Image src="/images/logo.svg" alt="FwdGrow" width={160} height={48} />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Delivering innovative IT solutions that empower businesses to grow and succeed.
@@ -77,8 +77,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fas fa-envelope text-accent-400" />
-                <a href="mailto:rajusharma011473@gmail.com" className="text-gray-400 hover:text-accent-400 text-sm">
-                  rajusharma011473@gmail.com
+                <a href="mailto:support@fwdgrow.com" className="text-gray-400 hover:text-accent-400 text-sm">
+                  support@fwdgrow.com
                 </a>
               </li>
             </ul>
@@ -88,7 +88,7 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">&copy; 2025 ASS IT Solution. All Rights Reserved.</p>
+            <p className="text-gray-500 text-sm">&copy; 2025 FwdGrow. All Rights Reserved.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
               <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>

@@ -65,7 +65,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 {[
                   { icon: "fas fa-map-marker-alt", gradient: "from-primary-500 to-primary-700", title: "Office Address", content: "NO 167, 37TH Cross 9TH Block, Jaya Nagar, Bengaluru, Karnataka 560035, India" },
-                  { icon: "fas fa-envelope", gradient: "from-accent-500 to-accent-700", title: "Email Address", content: "rajusharma011473@gmail.com", href: "mailto:rajusharma011473@gmail.com" },
+                  { icon: "fas fa-envelope", gradient: "from-accent-500 to-accent-700", title: "Email Address", content: "support@fwdgrow.com", href: "mailto:support@fwdgrow.com" },
                   { icon: "fas fa-phone", gradient: "from-green-500 to-green-700", title: "Phone Number", content: "+91 8618109835", href: "tel:+918618109835" },
                   { icon: "fab fa-whatsapp", gradient: "from-emerald-500 to-emerald-700", title: "WhatsApp", content: "Chat with us on WhatsApp", href: "https://wa.me/918618109835", external: true },
                 ].map((c) => (

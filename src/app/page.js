@@ -16,10 +16,6 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="hero-content">
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-                <span className="w-2 h-2 bg-accent-400 rounded-full mr-2 animate-pulse" />
-                <span className="text-primary-200 text-sm font-medium">Trusted IT Partner Since 2020</span>
-              </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Innovative{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">
@@ -50,8 +46,8 @@ export default function HomePage() {
                   <div className="w-72 h-72 bg-gradient-to-br from-primary-700/60 to-accent-600/30 rounded-2xl -rotate-6 hover:rotate-0 transition-transform duration-700 flex items-center justify-center">
                     <div className="text-center">
                       <i className="fas fa-rocket text-6xl text-accent-400 mb-4" />
-                      <p className="text-white font-bold text-2xl">ASS IT</p>
-                      <p className="text-primary-200 text-sm">SOLUTION</p>
+                      <p className="text-white font-bold text-2xl">FwdGrow</p>
+                      <p className="text-primary-200 text-sm">IT SOLUTION</p>
                     </div>
                   </div>
                 </div>
@@ -113,7 +109,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">ASS IT Solution</span>
+              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">FwdGrow</span>
             </h2>
             <p className="text-primary-200 text-lg">We combine technical expertise with a client-first approach.</p>
           </div>
@@ -145,7 +141,7 @@ export default function HomePage() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
           <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-            Let&apos;s discuss how ASS IT Solution can help you achieve your technology goals.
+            Let&apos;s discuss how FwdGrow can help you achieve your technology goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-white text-accent-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">

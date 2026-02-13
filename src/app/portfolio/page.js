@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Portfolio - ASS IT SOLUTION",
+  title: "Portfolio - FwdGrow",
 };
 
 const projects = [
