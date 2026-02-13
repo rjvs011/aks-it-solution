@@ -18,7 +18,7 @@ export async function POST(request) {
     formData.append("phone", phone || "Not provided");
     formData.append("service", service || "Not specified");
     formData.append("message", message);
-    formData.append("_subject", "New Inquiry - AKS IT Solution Website");
+    formData.append("_subject", "New Inquiry - ASS IT Solution Website");
     formData.append("_captcha", "false");
     formData.append("_template", "table");
 
@@ -31,7 +31,7 @@ export async function POST(request) {
         phone: phone || "Not provided",
         service: service || "Not specified",
         message,
-        _subject: "New Inquiry - AKS IT Solution Website",
+        _subject: "New Inquiry - ASS IT Solution Website",
         _captcha: "false",
         _template: "table",
       }),

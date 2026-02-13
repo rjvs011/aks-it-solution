@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -36,14 +37,8 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
-            <div>
-              <span className="text-xl font-bold text-white nav-logo-text">AKS</span>
-              <span className="text-sm block -mt-1 text-primary-200 nav-logo-sub">IT SOLUTION</span>
-            </div>
+          <Link href="/" className="flex items-center space-x-3">
+            <Image src="/images/logo.svg" alt="ASS IT SOLUTION" width={160} height={48} />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

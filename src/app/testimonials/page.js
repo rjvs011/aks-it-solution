@@ -1,15 +1,15 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Testimonials - AKS IT SOLUTION",
+  title: "Testimonials - ASS IT SOLUTION",
 };
 
 const testimonials = [
-  { initials: "RK", name: "Rajesh Kumar", role: "CEO, RetailMax", color: "primary", text: "AKS IT SOLUTION transformed our retail operations with their innovative POS system. The implementation was smooth, and the ongoing support has been exceptional. Highly recommended!" },
+  { initials: "RK", name: "Rajesh Kumar", role: "CEO, RetailMax", color: "primary", text: "ASS IT SOLUTION transformed our retail operations with their innovative POS system. The implementation was smooth, and the ongoing support has been exceptional. Highly recommended!" },
   { initials: "SP", name: "Sunita Patel", role: "Founder, HealthConnect", color: "accent", text: "The healthcare management system they developed for us has streamlined our operations significantly. Patient satisfaction has improved, and our staff loves the intuitive interface." },
-  { initials: "AM", name: "Amit Mehta", role: "CTO, FinTech Solutions", color: "green", text: "Outstanding technical expertise and commitment to quality. AKS IT SOLUTION delivered our fintech platform on time and within budget. Their security implementation is top-notch." },
-  { initials: "NK", name: "Neha Kapoor", role: "Marketing Head, FreshBazaar", color: "pink", text: "Their e-commerce solution helped us scale our business exponentially. The platform is robust, user-friendly, and has all the features we needed. Great job, team AKS!" },
-  { initials: "DS", name: "Deepak Singh", role: "VP Sales, CloudNine", color: "purple", text: "Professional, responsive, and highly skilled. AKS IT SOLUTION developed a custom CRM that perfectly fits our sales process. Our team productivity has increased by 40%." },
+  { initials: "AM", name: "Amit Mehta", role: "CTO, FinTech Solutions", color: "green", text: "Outstanding technical expertise and commitment to quality. ASS IT SOLUTION delivered our fintech platform on time and within budget. Their security implementation is top-notch." },
+  { initials: "NK", name: "Neha Kapoor", role: "Marketing Head, FreshBazaar", color: "pink", text: "Their e-commerce solution helped us scale our business exponentially. The platform is robust, user-friendly, and has all the features we needed. Great job, team ASS!" },
+  { initials: "DS", name: "Deepak Singh", role: "VP Sales, CloudNine", color: "purple", text: "Professional, responsive, and highly skilled. ASS IT SOLUTION developed a custom CRM that perfectly fits our sales process. Our team productivity has increased by 40%." },
   { initials: "AR", name: "Anjali Reddy", role: "HR Director, InnoTech", color: "cyan", text: "Excellent communication throughout the project. They understood our requirements perfectly and delivered an HR management system that has simplified our entire workflow." },
 ];
 
@@ -45,7 +45,7 @@ export default function TestimonialsPage() {
                   ))}
                 </div>
                 <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
-                  &ldquo;Working with AKS IT SOLUTION has been an absolute game-changer for our business. Their team delivered a comprehensive enterprise solution that exceeded our expectations in every way. The level of professionalism, technical expertise, and dedication they brought to our project was outstanding. They didn&apos;t just build software; they became a true technology partner invested in our success.&rdquo;
+                  &ldquo;Working with ASS IT SOLUTION has been an absolute game-changer for our business. Their team delivered a comprehensive enterprise solution that exceeded our expectations in every way. The level of professionalism, technical expertise, and dedication they brought to our project was outstanding. They didn&apos;t just build software; they became a true technology partner invested in our success.&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
