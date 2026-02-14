@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
@@ -12,19 +12,29 @@ export async function POST(request) {
       );
     }
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error("Missing RESEND_API_KEY environment variable");
+    const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_EMAIL } = process.env;
+
+    if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
+      console.error("Missing SMTP environment variables");
       return NextResponse.json(
         { error: "Server configuration error. Please contact the administrator." },
         { status: 500 }
       );
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const transporter = nodemailer.createTransport({
+      host: SMTP_HOST,
+      port: parseInt(SMTP_PORT || "587"),
+      secure: false,
+      auth: {
+        user: SMTP_USER,
+        pass: SMTP_PASS,
+      },
+    });
 
-    const { error } = await resend.emails.send({
-      from: "FwdGrow Website <support@fwdgrow.com>",
-      to: process.env.CONTACT_EMAIL || "support@fwdgrow.com",
+    await transporter.sendMail({
+      from: `"FwdGrow Website" <${SMTP_USER}>`,
+      to: CONTACT_EMAIL || SMTP_USER,
       replyTo: email,
       subject: `New Inquiry - ${name}`,
       html: `
@@ -47,14 +57,6 @@ export async function POST(request) {
         </div>
       `,
     });
-
-    if (error) {
-      console.error("Resend error:", error);
-      return NextResponse.json(
-        { error: "Failed to send message. Please try again later." },
-        { status: 500 }
-      );
-    }
 
     return NextResponse.json({ message: "Thank you! Your message has been sent successfully." });
   } catch (err) {
