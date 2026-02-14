@@ -1,16 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  secure: false,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
-
 export async function POST(request) {
   try {
     const { name, email, phone, service, message } = await request.json();
@@ -21,6 +11,27 @@ export async function POST(request) {
         { status: 400 }
       );
     }
+
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error("Missing SMTP environment variables");
+      return NextResponse.json(
+        { error: "Server configuration error. Please contact the administrator." },
+        { status: 500 }
+      );
+    }
+
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
+    });
 
     await transporter.sendMail({
       from: `"FwdGrow Website" <${process.env.SMTP_USER}>`,
