@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ReviewForm from "@/components/ReviewForm";
 
 export const metadata = {
   title: "Testimonials - FwdGrow",
@@ -114,6 +115,9 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </section>
+
+      {/* User Review Form & Submitted Reviews */}
+      <ReviewForm />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-accent-500 to-accent-600">
