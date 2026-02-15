@@ -5,12 +5,32 @@ export const metadata = {
 };
 
 const testimonials = [
-  { initials: "RK", name: "Rajesh Kumar", role: "CEO, RetailMax", color: "primary", text: "FwdGrow transformed our retail operations with their innovative POS system. The implementation was smooth, and the ongoing support has been exceptional. Highly recommended!" },
-  { initials: "SP", name: "Sunita Patel", role: "Founder, HealthConnect", color: "accent", text: "The healthcare management system they developed for us has streamlined our operations significantly. Patient satisfaction has improved, and our staff loves the intuitive interface." },
-  { initials: "AM", name: "Amit Mehta", role: "CTO, FinTech Solutions", color: "green", text: "Outstanding technical expertise and commitment to quality. FwdGrow delivered our fintech platform on time and within budget. Their security implementation is top-notch." },
-  { initials: "NK", name: "Neha Kapoor", role: "Marketing Head, FreshBazaar", color: "pink", text: "Their e-commerce solution helped us scale our business exponentially. The platform is robust, user-friendly, and has all the features we needed. Great job, team FwdGrow!" },
-  { initials: "DS", name: "Deepak Singh", role: "VP Sales, CloudNine", color: "purple", text: "Professional, responsive, and highly skilled. FwdGrow developed a custom CRM that perfectly fits our sales process. Our team productivity has increased by 40%." },
-  { initials: "AR", name: "Anjali Reddy", role: "HR Director, InnoTech", color: "cyan", text: "Excellent communication throughout the project. They understood our requirements perfectly and delivered an HR management system that has simplified our entire workflow." },
+  { initials: "RK", name: "Rajesh Kumar", color: "primary", text: "FwdGrow transformed our retail operations with their innovative POS system. The implementation was smooth, and the ongoing support has been exceptional. Highly recommended!" },
+  { initials: "SP", name: "Sunita Patel", color: "accent", text: "The healthcare management system they developed for us has streamlined our operations significantly. Patient satisfaction has improved, and our staff loves the intuitive interface." },
+  { initials: "AM", name: "Amit Mehta", color: "green", text: "Outstanding technical expertise and commitment to quality. FwdGrow delivered our fintech platform on time and within budget. Their security implementation is top-notch." },
+  { initials: "NK", name: "Neha Kapoor", color: "pink", text: "Their e-commerce solution helped us scale our business exponentially. The platform is robust, user-friendly, and has all the features we needed. Great job, team FwdGrow!" },
+  { initials: "DS", name: "Deepak Singh", color: "purple", text: "Professional, responsive, and highly skilled. FwdGrow developed a custom CRM that perfectly fits our sales process. Our team productivity has increased by 40%." },
+  { initials: "AR", name: "Anjali Reddy", color: "cyan", text: "Excellent communication throughout the project. They understood our requirements perfectly and delivered an HR management system that has simplified our entire workflow." },
+  { initials: "PJ", name: "Priya Joshi", color: "primary", text: "We approached FwdGrow for a complete website overhaul and they exceeded all our expectations. The new design is modern, fast, and our conversion rates have doubled since launch." },
+  { initials: "MR", name: "Manish Rao", color: "accent", text: "The mobile app FwdGrow built for us has received amazing feedback from our users. Their attention to detail and focus on user experience truly sets them apart." },
+  { initials: "KS", name: "Kavita Sharma", color: "green", text: "FwdGrow delivered a complex inventory management system that handles thousands of SKUs effortlessly. Their technical team is brilliant and always available for support." },
+  { initials: "RV", name: "Rahul Verma", color: "pink", text: "From consultation to deployment, FwdGrow made the entire process seamless. Our cloud migration was completed ahead of schedule with zero downtime. Impressive work!" },
+  { initials: "SG", name: "Sneha Gupta", color: "purple", text: "The AI-powered analytics dashboard FwdGrow created gives us insights we never had before. It has completely changed how we make business decisions. Truly transformative!" },
+  { initials: "AT", name: "Arjun Thakur", color: "cyan", text: "FwdGrow's team is incredibly talented and professional. They built a robust booking platform for us that handles peak traffic without any issues. Highly recommend their services." },
+  { initials: "DM", name: "Divya Malhotra", color: "primary", text: "We needed a custom ERP solution and FwdGrow delivered exactly what we envisioned. The system has improved our operational efficiency by over 50%. Excellent partner to work with." },
+  { initials: "VS", name: "Varun Saxena", color: "accent", text: "The e-learning platform FwdGrow developed for us supports thousands of concurrent users flawlessly. Their scalable architecture and clean code quality are top-notch." },
+  { initials: "PN", name: "Pooja Nair", color: "green", text: "FwdGrow redesigned our entire digital presence and the results speak for themselves. Our online engagement has increased by 300%. They truly understand modern web design." },
+  { initials: "HB", name: "Harsh Bhatia", color: "pink", text: "Working with FwdGrow felt like having an in-house tech team. They were responsive, proactive, and always offered creative solutions to our challenges. A pleasure to work with." },
+  { initials: "RM", name: "Ritu Mishra", color: "purple", text: "The payment gateway integration FwdGrow handled for us was flawless. Transactions are processed securely and efficiently. Their expertise in fintech is unmatched." },
+  { initials: "SK", name: "Sanjay Khanna", color: "cyan", text: "FwdGrow built a real-time tracking system for our logistics company that has reduced delivery times by 25%. Their IoT expertise and backend skills are remarkable." },
+  { initials: "AG", name: "Anita Goyal", color: "primary", text: "The customer support chatbot FwdGrow developed handles 70% of our queries automatically. It has reduced our support costs significantly while improving customer satisfaction." },
+  { initials: "TB", name: "Tarun Bhatt", color: "accent", text: "FwdGrow migrated our legacy systems to a modern tech stack without any data loss. The new system is faster, more reliable, and much easier to maintain. Outstanding job!" },
+  { initials: "MS", name: "Meera Srinivasan", color: "green", text: "Their UI/UX design team created a beautiful and intuitive interface for our SaaS product. User onboarding time dropped by 60% after the redesign. Absolutely brilliant work!" },
+  { initials: "VK", name: "Vivek Kulkarni", color: "pink", text: "FwdGrow developed a comprehensive project management tool tailored to our workflow. It has improved team collaboration and we now deliver projects 30% faster." },
+  { initials: "NJ", name: "Nisha Jain", color: "purple", text: "The SEO and digital marketing strategy FwdGrow implemented helped us rank on the first page of Google within three months. Our organic traffic has grown exponentially." },
+  { initials: "PA", name: "Pranav Agarwal", color: "cyan", text: "FwdGrow's cybersecurity audit identified critical vulnerabilities in our system. They fixed everything promptly and implemented robust security measures. We feel much safer now." },
+  { initials: "SS", name: "Shruti Sethi", color: "primary", text: "The warehouse management system FwdGrow built has automated our entire supply chain process. Errors have dropped to near zero and efficiency is at an all-time high." },
+  { initials: "KP", name: "Kiran Pandey", color: "accent", text: "FwdGrow delivered a stunning portfolio website that perfectly represents our brand. Their creative team has an incredible eye for design and the site loads blazingly fast." },
 ];
 
 export default function TestimonialsPage() {
@@ -39,10 +59,12 @@ export default function TestimonialsPage() {
                 <i className="fas fa-quote-left text-6xl" />
               </div>
               <div className="relative z-10">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <i key={i} className={`fas fa-star text-yellow-400${i > 0 ? " ml-1" : ""}`} />
                   ))}
+                  <span className="ml-3 text-2xl font-bold text-gray-900">4.9</span>
+                  <span className="ml-2 text-gray-500 text-sm">out of 5 — based on 26 reviews</span>
                 </div>
                 <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
                   &ldquo;Working with FwdGrow has been an absolute game-changer for our business. Their team delivered a comprehensive enterprise solution that exceeded our expectations in every way. The level of professionalism, technical expertise, and dedication they brought to our project was outstanding. They didn&apos;t just build software; they became a true technology partner invested in our success.&rdquo;
@@ -53,7 +75,6 @@ export default function TestimonialsPage() {
                   </div>
                   <div>
                     <div className="text-lg font-bold text-gray-900">Vikram Gupta</div>
-                    <div className="text-gray-600">Managing Director, TechVentures</div>
                   </div>
                 </div>
               </div>
@@ -86,7 +107,6 @@ export default function TestimonialsPage() {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900">{t.name}</div>
-                    <div className="text-sm text-gray-600">{t.role}</div>
                   </div>
                 </div>
               </div>
